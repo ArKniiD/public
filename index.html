@@ -9,11 +9,17 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 /*body { background: url('https://static.pexels.com/photos/1510/road-sky-sand-street.jpg'); background-size: cover; }*/
+
 </style>
 <body>
-
+<div class="w3-display-bottomright" style="position:fixed; margin: 0 20px 10px 0;">
+  <a href="#" onclick="switchLanguage('fr', 'en');"><img class="w3-circle w3-border" src="https://lipis.github.io/flag-icon-css/flags/1x1/fr.svg" id="fr" style="width: 30px; "/></a>
+  <a href="#" onclick="switchLanguage('en', 'fr');"><img class="w3-circle w3 w3-opacity w3-border" src="https://lipis.github.io/flag-icon-css/flags/1x1/gb.svg" id="en" style="width: 30px; "/></a>
+</div>
+<div id="en_content" style="display: none;">
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
+      
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -24,9 +30,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-text-light-gray w3-card-4" style="background: #2c3e50;">
         <div class="w3-display-container">
           <img src="avatar.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
+          <div class="w3-display-bottomleft w3-container w3-text-white w3-animate-opacity" style="text-shadow:1px 1px 0 #444; width:100%; background-color: rgba(80, 80, 80, 0.4);">
             <h3 style="margin-bottom:0px;">Nicolas HALLOUIN</h3>
-            <h5 style="margin:0;">Web applications engineer</h5>
+            <h6 style="margin:0;">Web applications engineer</h6>
           </div>
         </div>
         <div class="w3-container">
@@ -81,11 +87,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-threequarter">
-    
+      
       <div class="w3-container w3-card-2 w3-light-gray w3-margin-bottom">
         <h2 class="w3-text-dark-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Full Stack Developer / <a href="http://www.soprasteria.com/" target="_blank"><img alt="Sopra Steria" src="http://www.soprasteria.com/Sitefinity/WebsiteTemplates/App_Themes/Sopra_Steria/css/i/sopra-steria.png" height="25"/></a></b></h5>
+          <h5 class="w3-opacity"><b>Full Stack Developer / <a href="http://www.soprasteria.com/" target="_blank"><img alt="Sopra Steria" src="http://www.soprasteria.com/Sitefinity/WebsiteTemplates/App_Themes/Sopra_Steria/css/i/sopra-steria.png" height="22"/></a></b></h5>
           <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> Aug 2014 - <span class="w3-tag w3-orange w3-round">Current</span></h6>
           <p>In Sopra Steria, I have worked on 2 different projects for Orange Business Services with 2 totally different management scale. I led a small team of 2 developers (me included) to build from scratch an application that provides some process automations concerning business networks productions, within a complex information system. <br/>
           <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Java / Maven</span>
@@ -104,7 +110,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr class="w3-border-grey">
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Applications Developer / <a href="https://www.ojc-conseil.com/Page/Accueil" target="_blank"><img height="25" alt="OJC Conseil" src="https://intranet.ojc-conseil.com/Files/Download/3-19063"/></a></b></h5>
+          <h5 class="w3-opacity"><b>Web Applications Developer / <a href="https://www.ojc-conseil.com/Page/Accueil" target="_blank"><img height="22" alt="OJC Conseil" src="https://intranet.ojc-conseil.com/Files/Download/3-19063"/></a></b></h5>
           <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> May 2013 - Jul 2013</h6>
           <p>In OJC Conseil, I worked as an intern to design, develop and test a web module for human resources services using OJC Framework. I also wrote tutorials for this framework.<br/>
           <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Entity Framework</span>
@@ -115,11 +121,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr class="w3-border-grey">
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Junior Development Engineer / <a href="http://www.viewup.fr/" target="_blank"><img alt="View Up" src="http://www.viewup.fr/ressources/img/Logos/logo_viewup/VU_logo_couleur.png" height="25" /></a></b></h5>
+          <h5 class="w3-opacity"><b>Junior Development Engineer / <a href="http://www.viewup.fr/" target="_blank"><img alt="View Up" src="http://www.viewup.fr/ressources/img/Logos/logo_viewup/VU_logo_couleur.png" height="22" /></a></b></h5>
           <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> Jan 2012 - Mar 2014</h6>
           <p>I worked for the junior business of ENSIBS with which I realised 2 websites. The first was a web tool for the Saint Louis - La Paix scholar group. (no longer maintained).
           <br/>
-          <p>The second was made for the 2013 Corangeit Agricole Tour boat race > http://corangeitagricoletour.fr (no longer maintained).<br/>
+          <p>The second was made for the 2013 Corangeit Agricole Tour boat race > http://creditagricoletour.fr (no longer maintained).<br/>
           <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">PHP</span>
           <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Symfony 3</span>
           <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Javascript / Jquery</span>
@@ -171,6 +177,182 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <a href="https://github.com/ArKniiD" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
   </p>
 </footer>
+</div>
 
+
+
+
+<div id="fr_content">
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+      
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-quarter" >
+    
+      <div class="w3-text-light-gray w3-card-4" style="background: #2c3e50;">
+        <div class="w3-display-container">
+          <img src="avatar.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-white w3-animate-opacity" style="text-shadow:1px 1px 0 #444; width:100%; background-color: rgba(80, 80, 80, 0.4);">
+            <h3 style="margin-bottom:0px;">Nicolas HALLOUIN</h3>
+            <h6 style="margin:0;">Ingénieur spécialisé en web apps</h6>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-orange"></i>Ingénieur informatique</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-orange"></i>Rennes, FR</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>n.hallouin@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>+33671079735</p>
+          <p><i class="fa fa-car fa-fw w3-margin-right w3-large w3-text-orange"></i>Permis avec voiture</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-orange"></i>Compétences</b></p>
+          <p>Développement web</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:90%">90%</div>
+          </div>
+          <p>Développement logiciel</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:70%">70%</div>
+          </div>
+          <p>Développement mobile</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:70%">70%</div>
+          </div>
+          <p>Gestion de projets</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-orange" style="width:60%">60%</div>
+          </div>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-gratipay fa-fw w3-margin-right w3-text-orange"></i>Centres d'intérêts</b></p>
+          <p><i class="fa fa-search fa-fw"></i> NodeJS, frameworks JS (Angular 4, ReactJS, VueJS...), frameworks PHP (Symfony, Laravel...), Docker, Intégration continue</p>
+          <p>Sciences physique</p>
+          <p>Poker</p>
+          <p><i class="fa fa-youtube-play fa-fw"></i> Devoxx, The Coding Train, Graphikart</p>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-orange"></i>Langages</b></p>
+          <p>Français</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:100%"></div>
+          </div>
+          <p>Anglais</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:70%"></div>
+          </div>
+          <p>Espagnol</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-orange" style="height:24px;width:20%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-threequarter">
+      
+      <div class="w3-container w3-card-2 w3-light-gray w3-margin-bottom">
+        <h2 class="w3-text-dark-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Expérience professionnelle</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Développeur Full Stack / <a href="http://www.soprasteria.com/" target="_blank"><img alt="Sopra Steria" src="http://www.soprasteria.com/Sitefinity/WebsiteTemplates/App_Themes/Sopra_Steria/css/i/sopra-steria.png" height="22"/></a></b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> Aou 2014 - <span class="w3-tag w3-orange w3-round">Actuellement</span></h6>
+          <p>Au sein de Sopra Steria, j'ai travaillé sur 2 projets projets pour le compte d'Orange Business Services avec 2 dimensions humaines complètement différentes. J'ai mené un petite équipe de 2 développeurs (moi compris) pour construire une nouvelle application permettant d'automatiser certains processus concenrant la production de services réseaux virtuels pour entreprise (business VPN), le tout s'intégrant dans un système d'information existant et complexe. <br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Java / Maven</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Gherkin / Selenium /Cucumber</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Sonar / Jacoco / Mockito</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Jenkins</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Javascript</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Docker</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Apache2</span>
+          </p>
+          <p>The second project gathers about 60 contributors (developers, architects, business analysts...) on which I have been working on for more than 2 years. Its goal is to rework some applications of OBS information system in order to simplify the production of business networks. It consists of building a new application to replace older ones and it is based on BPM technologies provided by Pega software packages. <br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Pega PRPC</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Oracle SQL</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">SoapUi</span>
+          </p>
+          <hr class="w3-border-grey">
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Web Applications Developer / <a href="https://www.ojc-conseil.com/Page/Accueil" target="_blank"><img height="22" alt="OJC Conseil" src="https://intranet.ojc-conseil.com/Files/Download/3-19063"/></a></b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> May 2013 - Jul 2013</h6>
+          <p>In OJC Conseil, I worked as an intern to design, develop and test a web module for human resources services using OJC Framework. I also wrote tutorials for this framework.<br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Entity Framework</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">ASP.net</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">C#</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Javascript</span>
+          </p>
+          <hr class="w3-border-grey">
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Junior Development Engineer / <a href="http://www.viewup.fr/" target="_blank"><img alt="View Up" src="http://www.viewup.fr/ressources/img/Logos/logo_viewup/VU_logo_couleur.png" height="22" /></a></b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw"></i> Jan 2012 - Mar 2014</h6>
+          <p>I worked for the junior business of ENSIBS with which I realised 2 websites. The first was a web tool for the Saint Louis - La Paix scholar group. (no longer maintained).
+          <br/>
+          <p>The second was made for the 2013 Corangeit Agricole Tour boat race > http://creditagricoletour.fr (no longer maintained).<br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">PHP</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Symfony 3</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Javascript / Jquery</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-light-gray">
+        <h2 class="w3-text-dark-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>ENSIBS</b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - 2014</h6>
+          <p>Computer Engineer Diploma achieved in the National Superior Engineer School of South Brittany.
+          <br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Programming</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Mathematics</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Mecanics</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Electronics</span>
+          </p>
+          <hr class="w3-border-grey">
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>IUT de Vannes</b></h5>
+          <h6 class="w3-text-orange"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2011</h6>
+          <p>Technology Degree achieved in Universitary Institute of Technologies, Vannes.
+          <br/>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Programming</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Software conception</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Systems & Networks</span>
+          <span class="w3-tag w3-text-orange w3-round w3-light-gray w3-border w3-border-orange">Mathematics</span>
+          </p>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-center w3-margin-top w3-text-light-gray" style="background: #2c3e50;">
+  <p>Find me on social media.<br/>
+  <a href="https://www.facebook.com/nicolas.hallouin" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/HALLOUINNicolas" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://www.linkedin.com/in/nicolas-hallouin-1900b843/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <a href="https://github.com/ArKniiD" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+  </p>
+</footer>
+</div>
+
+<script type="text/javascript">
+  function switchLanguage(to, from){
+    document.getElementById(from + "_content").style.display = "none";
+    document.getElementById(to + "_content").style.display = "block";
+    document.getElementById(from).className = "w3-circle w3-border w3-opacity";
+    document.getElementById(to).className = "w3-circle w3-border";
+    return false;
+  }
+</script>
 </body>
 </html>
